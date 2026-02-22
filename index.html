@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Chicken - Explosão de Sabor</title>
+    <meta name="description"
+        content="O frango mais crocante da cidade, preparado na hora e entregue quente na sua casa. Experiência que vai muito além do comum.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Vibe Chicken</div>
+        <nav class="nav-links">
+            <a href="#about">Por Quê?</a>
+            <a href="#menu">Cardápio</a>
+            <a href="#reviews">Avaliações</a>
+        </nav>
+        <a href="#cta" class="nav-btn">Pedir Agora</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-visual">
+            <canvas id="hero-canvas"></canvas>
+            <!-- A glowing backdrop behind the canvas -->
+        </div>
+        <div class="glow-effect"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Explosão de<br><span class="highlight">Sabor</span> em<br>Cada Mordida</h1>
+            <p class="hero-subtitle">O frango mais crocante da cidade, preparado na hora e entregue quente na sua casa.
+            </p>
+            <p class="hero-desc">Ingredientes selecionados, tempero exclusivo e uma experiência que vai muito além do
+                comum.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                <a href="#cta" class="btn btn-secondary">Pedir Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">Por Que Escolher a Vibe Chicken?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="icon-wrapper">
+                    <!-- Crisp Icon (SVG) -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="benefit-icon">
+                        <path
+                            d="M11.999 22c-5.523 0-10-4.477-10-10 0-5.523 4.477-10 10-10 5.523 0 10 4.477 10 10 0 5.523-4.477 10-10 10zm-3-11v4l8-4-8-4v4z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <h3>Crocância Perfeita</h3>
+                <p>Nossa técnica garante o croque em cada pedaço, sem ficar encharcado.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon-wrapper">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="benefit-icon">
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41M12 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Entrega Rápida</h3>
+                <p>Embalagens térmicas especiais para chegar fervendo à sua porta.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon-wrapper">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="benefit-icon">
+                        <path d="M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8.5M10.5 4.5l-2.5 6h8l-2.5-6M3 10.5h18"
+                            stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Ingredientes Frescos</h3>
+                <p>Aves de criadores locais, marinados por 24h em temperos secretos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="menu" class="products-section">
+        <h2 class="section-title text-center">Nossos Clássicos</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img-wrapper placeholder-img">
+                    <div class="overlay"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Balde Vibe Supremo</h3>
+                    <p>12 pedaços grandes, super crocantes e macios por dentro.</p>
+                    <div class="product-bottom">
+                        <span class="price">R$ 59,90</span>
+                        <button class="btn btn-add">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-wrapper placeholder-img">
+                    <div class="overlay"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Combo Casal</h3>
+                    <p>6 pedaços, 2 batatas fritas médias e 2 molhos especiais.</p>
+                    <div class="product-bottom">
+                        <span class="price">R$ 45,90</span>
+                        <button class="btn btn-add">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-wrapper placeholder-img">
+                    <div class="overlay"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Tiras Vibe (Sem Osso)</h3>
+                    <p>10 tiras de peito empanadas. Perfeitas para mergulhar no molho.</p>
+                    <div class="product-bottom">
+                        <span class="price">R$ 38,90</span>
+                        <button class="btn btn-add">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="reviews" class="reviews-section">
+        <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Absolutamente o melhor frango frito que já comi! A crocância é surreal e chegou
+                    super quente."</p>
+                <p class="review-author">- Carlos Mendes</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"O tempero é inigualável. Pedi no sábado e em 20 minutos estava na minha porta.
+                    Recomendo muito!"</p>
+                <p class="review-author">- Juliana Tavares</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Os molhos artesanais fazem toda a diferença. Virou parada obrigatória no fim de
+                    semana."</p>
+                <p class="review-author">- Roberto Farias</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery CTA Section -->
+    <section id="cta" class="delivery-cta">
+        <div class="cta-content">
+            <h2>Peça Agora e Receba em Minutos</h2>
+            <p>Não passe vontade. O melhor frango da sua vida está a um clique de distância.</p>
+            <button class="btn btn-primary cta-btn">Fazer Pedido</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Vibe Chicken</div>
+                <p>Explosão de sabor em cada mordida.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>(11) 99999-9999</p>
+                <p>contato@vibechicken.com.br</p>
+                <p>Av. Paulista, 1000 - São Paulo, SP</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Horários</h4>
+                <p>Ter a Dom: 18h às 23h</p>
+                <p>Segunda: Fechado</p>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vibe Chicken. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
